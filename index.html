@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>Ponto Pai 2.Filho</title>
     </head>
@@ -19,10 +21,10 @@
             <label for="numA"></label>
             <input type="text" name="numA" id="numA">
         </div>
-        <button id="titulo" onclick="titulo()">Título</button>
-        <button id="texto" onclick="escrever()">Texto</button>
+        <button type="button" class="btn btn-primary" id="titulo" onclick="titulo()">Título</button>
+        <button type="button" class="btn btn-success" id="texto" onclick="escrever()">Texto</button>
         <!-- <button id="listaB" onclick="lista()">Lista</button> -->
-        <button onclick="novaNota()">Nova Nota</button>
+        <button type="button" class="btn btn-danger" onclick="novaNota()">Nova Nota</button>
         <script src="script.js"></script>
     </body>
 
