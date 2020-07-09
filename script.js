@@ -11,11 +11,11 @@ function titulo() {
 
     var titulo = document.getElementById('titulo')
     var texto = document.getElementById('texto')
-    // var lista = document.getElementById('listaB')
+    var lista = document.getElementById('lista')
 
     titulo.disabled = true
     texto.disabled = false
-    // lista.disabled = false
+    lista.disabled = false
 }
 
 function escrever() {
@@ -29,34 +29,31 @@ function escrever() {
 
     var titulo = document.getElementById('titulo')
     var texto = document.getElementById('texto')
-    // var lista = document.getElementById('listaB')
 
     titulo.disabled = true
     texto.disabled = true
-    // if (lista.disabled === false) {
-    //     lista.disabled = false
-    // }
 }
 
-// function lista() {
-//     var escrita = document.getElementById('numA')
-//     var texto = escrita.value
+function lista() {
+    var escrita = document.getElementById('numA')
+    var texto = escrita.value
 
-//     var nota = document.getElementById('lista')
-//     var escrita = document.createElement('li')
-//     escrita.innerHTML = texto
-//     nota.appendChild(escrita)
+    var nota = document.getElementById('quadro')
+    var lista = document.createElement('ul')
+    var escrita = document.createElement('li')
+    escrita.innerHTML = texto
+    nota.appendChild(lista)
+    lista.appendChild(escrita)
 
-//     var titulo = document.getElementById('titulo')
-//     var texto = document.getElementById('texto')
-//     // var lista = document.getElementById('listaB')
+    var titulo = document.getElementById('titulo')
+    var texto = document.getElementById('texto')
+    var lista = document.getElementById('lista')
 
-//     titulo.disabled = true
-//     // lista.disabled = true
-//     if (texto.disabled === false) {
-//         texto.disabled = false
-//     }
-// }
+    titulo.disabled = true
+    if (texto.disabled === false) {
+        texto.disabled = false
+    }
+}
 
 function novaNota() {
     var nota = document.getElementById('quadro')
@@ -65,7 +62,7 @@ function novaNota() {
 
     var titulo = document.getElementById('titulo')
     var texto = document.getElementById('texto')
-    var lista = document.getElementById('listaB')
+    var lista = document.getElementById('lista')
 
     titulo.disabled = false
     texto.disabled = true
